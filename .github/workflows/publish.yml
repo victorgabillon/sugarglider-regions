@@ -1,0 +1,67 @@
+# Template for the separately approved public data-distribution repository.
+# Copy to .github/workflows/publish.yml there; it is inactive in this repository.
+name: Publish approved offline region files
+
+on:
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: Public release tag containing sugarglider-regions-static.zip
+        type: string
+        required: true
+      archive_sha256:
+        description: Reviewed publication archive SHA-256
+        type: string
+        required: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: regional-pages
+  cancel-in-progress: false
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pages: read
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: "3.13"
+      - name: Download the explicitly selected release archive
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REGION_RELEASE_TAG: ${{ inputs.release_tag }}
+          REGION_ARCHIVE_SHA256: ${{ inputs.archive_sha256 }}
+        run: |
+          python3 -c 'import os,re; assert re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9._-]{0,119}", os.environ["REGION_RELEASE_TAG"]); assert re.fullmatch(r"[a-f0-9]{64}", os.environ["REGION_ARCHIVE_SHA256"])'
+          gh release download "$REGION_RELEASE_TAG" --repo "$GITHUB_REPOSITORY" --pattern sugarglider-regions-static.zip --dir "$RUNNER_TEMP/region-publication"
+          python3 unpack_distribution.py "$RUNNER_TEMP/region-publication/sugarglider-regions-static.zip" "$RUNNER_TEMP/region-site" "$REGION_ARCHIVE_SHA256"
+      - name: Include the publisher-reviewed privacy page
+        run: python3 copy_public_privacy.py privacy/index.html "$RUNNER_TEMP/region-site"
+      - uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
+      - uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4
+        with:
+          path: ${{ runner.temp }}/region-site
+          include-hidden-files: true
+          retention-days: 1
+
+  deploy:
+    needs: prepare
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy verified static data
+        id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4
