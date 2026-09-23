@@ -3,14 +3,14 @@
   "base_url": "https://victorgabillon.github.io/sugarglider-regions/",
   "region_id": "yvelines-ouest-parisien",
   "display_name": "Yvelines et ouest parisien",
-  "build_id": "1bbf598d64f5d5cc987a60f9a4cb22318392d596ff88f3eb6b40cb70dceb4691",
+  "build_id": "2e1edc5f95d230f4292150e2d5e2e9d9388fe1d23507b0a03bcdcf2de93fd847",
   "archive": {
-    "path": "/home/pompote/oldata/victor/sugarglider-v1-artifacts/2026-09-12-05b77ba/sugarglider-regions-static.zip",
+    "path": "/home/pompote/oldata/victor/sugarglider-v1-artifacts/code5-places-release-2026-09-22/distribution/sugarglider-regions-static.zip",
     "name": "sugarglider-regions-static.zip",
-    "byte_size": 188374659,
-    "sha256": "40990c600c0b7bf934522daef1c92d7db44d0ab890077e1224084a6244476a9f"
+    "byte_size": 376748078,
+    "sha256": "85e1af44f527e3eca1067a5c479f5a093f2a263565749eec04cde9f57b0545c9"
   },
-  "site": "/home/pompote/oldata/victor/sugarglider-v1-artifacts/work-publication-code2/site",
+  "site": "/home/pompote/oldata/victor/sugarglider-v1-artifacts/code5-places-release-2026-09-22/distribution/site",
   "files": [
     {
       "byte_size": 0,
@@ -18,19 +18,19 @@
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
-      "byte_size": 1712,
+      "byte_size": 1833,
       "path": "README.txt",
-      "sha256": "0889b5bfc5123e7625e6690332b9d1898c03f26401189b8821085b68226dc95d"
+      "sha256": "425c9d0574a7bede9d0fcdbc38e5fc49620bee1da63561619ef7e4fbee3c9374"
     },
     {
       "byte_size": 591,
       "path": "catalog.json",
-      "sha256": "e6cbaee32e9fe9760f4cd3d9b56d4cdab69235d06d4c5a7d6e22f26fa3e02688"
+      "sha256": "fcfa575108a22aa4bffb0e409b2487b3f25f0aab64069a869a0c2d746e325d61"
     },
     {
       "byte_size": 922,
       "path": "index.html",
-      "sha256": "2ac325f08185bcef52b795f40bb48366e88e71f0f2c969c464c6cd3c63904cae"
+      "sha256": "9231f6b3a5099fb43d53ccddca38b87923b86a28273f60da20466eedc425ee01"
     },
     {
       "byte_size": 2229,
@@ -66,6 +66,44 @@
       "byte_size": 96051200,
       "path": "regions/yvelines-ouest-parisien/1bbf598d64f5d5cc987a60f9a4cb22318392d596ff88f3eb6b40cb70dceb4691/routing/valhalla_tiles.tar",
       "sha256": "94d83392f4261809ce830f916d01d24db14b7d0a30f1e9ded655078c37364b0f"
+    },
+    {
+      "byte_size": 2229,
+      "path": "regions/yvelines-ouest-parisien/2e1edc5f95d230f4292150e2d5e2e9d9388fe1d23507b0a03bcdcf2de93fd847/manifest.json",
+      "sha256": "b4de2fc7fc1cec0d910b6c46ea31c493dabaf8973046b63854f1e1176ec475a0"
+    },
+    {
+      "byte_size": 81571296,
+      "path": "regions/yvelines-ouest-parisien/2e1edc5f95d230f4292150e2d5e2e9d9388fe1d23507b0a03bcdcf2de93fd847/map/basemap.pmtiles",
+      "sha256": "620dddfcb7e9c77995d91987299a5651ad1be4ef957154ab5c81ff414b60ff94"
+    },
+    {
+      "byte_size": 631,
+      "path": "regions/yvelines-ouest-parisien/2e1edc5f95d230f4292150e2d5e2e9d9388fe1d23507b0a03bcdcf2de93fd847/map/manifest.json",
+      "sha256": "f1ddced633fae222133aac580172920c21f2e4a45f57b99a3d3ec1094aa5269c"
+    },
+    {
+      "byte_size": 10634994,
+      "path": "regions/yvelines-ouest-parisien/2e1edc5f95d230f4292150e2d5e2e9d9388fe1d23507b0a03bcdcf2de93fd847/nature/index.json.gz",
+      "sha256": "abb0819a4f4b02d8ee844aa19de71c1760e0b63a1a9f7bd3410513d82dca7b90"
+    },
+    {
+      "byte_size": 110520,
+      "path": "regions/yvelines-ouest-parisien/2e1edc5f95d230f4292150e2d5e2e9d9388fe1d23507b0a03bcdcf2de93fd847/pois/index.json.gz",
+      "sha256": "d56c1e7f89f3c57e545ee0cdb83ca70e3de92f170d396e1c90682960c39192f1"
+    },
+    {
+      "byte_size": 270,
+      "path": "regions/yvelines-ouest-parisien/2e1edc5f95d230f4292150e2d5e2e9d9388fe1d23507b0a03bcdcf2de93fd847/routing/manifest.json",
+      "sha256": "89961563df977a3eaf421c0192ddd8ec7513c6ee567f46e2c240fddd2299753d"
+    },
+    {
+      "byte_size": 96051200,
+      "path": "regions/yvelines-ouest-parisien/2e1edc5f95d230f4292150e2d5e2e9d9388fe1d23507b0a03bcdcf2de93fd847/routing/valhalla_tiles.tar",
+      "sha256": "988672888aa4542ad4c456faffbc75c08e5ff58c758ac34006e0081cb9aec1b4"
     }
+  ],
+  "retained_build_ids": [
+    "1bbf598d64f5d5cc987a60f9a4cb22318392d596ff88f3eb6b40cb70dceb4691"
   ]
 }
