@@ -39,10 +39,12 @@ CORS, no redirects, untransformed compressed files, every size/hash and a real
 Fairphone download. A green workflow is not proof of this client acceptance.
 
 Pages deployment replaces the complete site. Prepare an update with
-`--retain-directory` for the previous version. Never overwrite immutable files
-or silently retire a currently supported version. This initial tool supports one
-advertised region and one retained version. More retained versions/regions or
-traffic beyond Pages limits require a separate hosting/retention decision.
+repeatable `--retain-directory` arguments for every supported previous version.
+Never overwrite immutable files or silently retire a supported version. The
+reviewed verifier accepts one advertised current region and multiple complete,
+independently verified retained builds, within the unchanged file-count and
+950 MB site limits. Additional regions or traffic beyond Pages limits require a
+separate hosting decision.
 
 See the main repository's `docs/pr42-static-distribution.md` for preparation,
 current limits, licensing, approval gates and the publication checklist.
