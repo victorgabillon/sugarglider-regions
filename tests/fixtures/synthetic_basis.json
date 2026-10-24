@@ -1,0 +1,395 @@
+{
+  "basis": {
+    "derivation": {
+      "algorithm": "ign-rge-alti-5m-ign69-skadi-v1",
+      "prepared_sha256": "12565b006007120530488c829329b948a3d64e4b70a7ae74f7b304ddc9e4a77c",
+      "sources": {
+        "files": [
+          {
+            "acquired_at": "2026-10-24T00:00:00Z",
+            "byte_size": 33,
+            "etag": null,
+            "filename": "RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D002_2020-09-04.7z",
+            "last_modified": null,
+            "sha256": "57ce7c1aaac9baf687ca1ed253e34c1e0042e5b3bd7ac13534b40a52512b6247",
+            "url": "https://data.geopf.fr/telechargement/download/RGEALTI/RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D002_2020-09-04/RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D002_2020-09-04.7z",
+            "version_id": null
+          },
+          {
+            "acquired_at": "2026-10-24T00:00:00Z",
+            "byte_size": 33,
+            "etag": null,
+            "filename": "RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D027_2022-12-21.7z",
+            "last_modified": null,
+            "sha256": "763818095378656623408058be8497af697e3a7390abf7ccdc334644ca866f5b",
+            "url": "https://data.geopf.fr/telechargement/download/RGEALTI/RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D027_2022-12-21/RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D027_2022-12-21.7z",
+            "version_id": null
+          },
+          {
+            "acquired_at": "2026-10-24T00:00:00Z",
+            "byte_size": 33,
+            "etag": null,
+            "filename": "RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D028_2019-12-16.7z",
+            "last_modified": null,
+            "sha256": "ab45d53322b0eaa3d7b3482b0a11897641c628a37779728236b6dbbe07f8455f",
+            "url": "https://data.geopf.fr/telechargement/download/RGEALTI/RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D028_2019-12-16/RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D028_2019-12-16.7z",
+            "version_id": null
+          },
+          {
+            "acquired_at": "2026-10-24T00:00:00Z",
+            "byte_size": 33,
+            "etag": null,
+            "filename": "RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D041_2019-12-16.7z",
+            "last_modified": null,
+            "sha256": "ff4a06155f1522df02bbbd0ba96477998772fb9b2de382c359f0369b6d4e68ed",
+            "url": "https://data.geopf.fr/telechargement/download/RGEALTI/RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D041_2019-12-16/RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D041_2019-12-16.7z",
+            "version_id": null
+          },
+          {
+            "acquired_at": "2026-10-24T00:00:00Z",
+            "byte_size": 33,
+            "etag": null,
+            "filename": "RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D045_2023-01-03.7z",
+            "last_modified": null,
+            "sha256": "a2113a60811245f1a752c1c84083c962d4cc6a37108a66a18772622d9ad25566",
+            "url": "https://data.geopf.fr/telechargement/download/RGEALTI/RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D045_2023-01-03/RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D045_2023-01-03.7z",
+            "version_id": null
+          },
+          {
+            "acquired_at": "2026-10-24T00:00:00Z",
+            "byte_size": 33,
+            "etag": null,
+            "filename": "RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D060_2020-09-04.7z",
+            "last_modified": null,
+            "sha256": "fc818b12f7306b38fc7e18cb0b64c91b9d7c4a5d0581d334c00a10731f4b553c",
+            "url": "https://data.geopf.fr/telechargement/download/RGEALTI/RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D060_2020-09-04/RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D060_2020-09-04.7z",
+            "version_id": null
+          },
+          {
+            "acquired_at": "2026-10-24T00:00:00Z",
+            "byte_size": 33,
+            "etag": null,
+            "filename": "RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D075_2020-07-30.7z",
+            "last_modified": null,
+            "sha256": "d7d618d81d30cfdfbed88674014b5488a03bc26cef5c745d181422bd769f4097",
+            "url": "https://data.geopf.fr/telechargement/download/RGEALTI/RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D075_2020-07-30/RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D075_2020-07-30.7z",
+            "version_id": null
+          },
+          {
+            "acquired_at": "2026-10-24T00:00:00Z",
+            "byte_size": 33,
+            "etag": null,
+            "filename": "RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D076_2020-10-20.7z",
+            "last_modified": null,
+            "sha256": "a71ce838e7178ac771e51b0f01d0dc7cbccadb59efdcf44299b665dd4ba6d908",
+            "url": "https://data.geopf.fr/telechargement/download/RGEALTI/RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D076_2020-10-20/RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D076_2020-10-20.7z",
+            "version_id": null
+          },
+          {
+            "acquired_at": "2026-10-24T00:00:00Z",
+            "byte_size": 33,
+            "etag": null,
+            "filename": "RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D077_2021-03-03.7z",
+            "last_modified": null,
+            "sha256": "228c9b6cef6761f31ed41c0a29fd34bb3cc47bf8ff004794eb9914647b63836c",
+            "url": "https://data.geopf.fr/telechargement/download/RGEALTI/RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D077_2021-03-03/RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D077_2021-03-03.7z",
+            "version_id": null
+          },
+          {
+            "acquired_at": "2026-10-24T00:00:00Z",
+            "byte_size": 33,
+            "etag": null,
+            "filename": "RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D078_2020-07-30.7z",
+            "last_modified": null,
+            "sha256": "25b2273f413b76c3d57f40084b035a6795d7cb0ff2ff07e68b8fd4b177fe5055",
+            "url": "https://data.geopf.fr/telechargement/download/RGEALTI/RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D078_2020-07-30/RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D078_2020-07-30.7z",
+            "version_id": null
+          },
+          {
+            "acquired_at": "2026-10-24T00:00:00Z",
+            "byte_size": 34,
+            "etag": null,
+            "filename": "RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D080_2019-07-09.7z",
+            "last_modified": null,
+            "sha256": "bbbfc93fe02a3ceb9a912d63d38b1d5f587ddfff39013b2c31a453044de4b74d",
+            "url": "https://data.geopf.fr/telechargement/download/RGEALTI/RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D080_2019-07-09/RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D080_2019-07-09.7z",
+            "version_id": null
+          },
+          {
+            "acquired_at": "2026-10-24T00:00:00Z",
+            "byte_size": 34,
+            "etag": null,
+            "filename": "RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D089_2023-01-03.7z",
+            "last_modified": null,
+            "sha256": "f2a024389b41e0a793f22295eef19ccd867f24a3384db927a2bb7b4f289e6224",
+            "url": "https://data.geopf.fr/telechargement/download/RGEALTI/RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D089_2023-01-03/RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D089_2023-01-03.7z",
+            "version_id": null
+          },
+          {
+            "acquired_at": "2026-10-24T00:00:00Z",
+            "byte_size": 34,
+            "etag": null,
+            "filename": "RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D091_2021-03-03.7z",
+            "last_modified": null,
+            "sha256": "a5373eacdbde58ec871aa5612cb2632bae981f762bb09ee94e789f2f100c05c6",
+            "url": "https://data.geopf.fr/telechargement/download/RGEALTI/RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D091_2021-03-03/RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D091_2021-03-03.7z",
+            "version_id": null
+          },
+          {
+            "acquired_at": "2026-10-24T00:00:00Z",
+            "byte_size": 34,
+            "etag": null,
+            "filename": "RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D092_2020-07-30.7z",
+            "last_modified": null,
+            "sha256": "2d226d211f0b17e42ded8d67cd5b147d5053b215bb410b550ae5fc6bd8c8f3cd",
+            "url": "https://data.geopf.fr/telechargement/download/RGEALTI/RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D092_2020-07-30/RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D092_2020-07-30.7z",
+            "version_id": null
+          },
+          {
+            "acquired_at": "2026-10-24T00:00:00Z",
+            "byte_size": 34,
+            "etag": null,
+            "filename": "RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D093_2020-07-30.7z",
+            "last_modified": null,
+            "sha256": "36e0f58511766aa517a8355110124c2006fc08d080ad86534cf9f845a0ed424b",
+            "url": "https://data.geopf.fr/telechargement/download/RGEALTI/RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D093_2020-07-30/RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D093_2020-07-30.7z",
+            "version_id": null
+          },
+          {
+            "acquired_at": "2026-10-24T00:00:00Z",
+            "byte_size": 34,
+            "etag": null,
+            "filename": "RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D094_2020-07-30.7z",
+            "last_modified": null,
+            "sha256": "7f09ab0d003a77e7a2c4a2ef8f5fec6c25a033deedb43dfae72e432ecdfb7460",
+            "url": "https://data.geopf.fr/telechargement/download/RGEALTI/RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D094_2020-07-30/RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D094_2020-07-30.7z",
+            "version_id": null
+          },
+          {
+            "acquired_at": "2026-10-24T00:00:00Z",
+            "byte_size": 34,
+            "etag": null,
+            "filename": "RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D095_2020-07-30.7z",
+            "last_modified": null,
+            "sha256": "0f722c4334dae6a944c039904889e011c0ae0653a7ce5c1a566b0ea334810d2f",
+            "url": "https://data.geopf.fr/telechargement/download/RGEALTI/RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D095_2020-07-30/RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D095_2020-07-30.7z",
+            "version_id": null
+          }
+        ],
+        "horizontal_crs": "EPSG:2154",
+        "license_url": "https://www.etalab.gouv.fr/licence-ouverte-open-licence/",
+        "product": "IGN-RGE-ALTI-5M",
+        "schema_version": 1,
+        "surface": "DTM",
+        "vertical_crs": "EPSG:5720"
+      },
+      "transformation_sha256": "cb49681e98b807e934d7ecb1b6550ff82c16415193bcddc61ee5b04a9dcb9c93"
+    },
+    "graph_build_record_sha256": "6c5183b335acade353f1ddbbf72741b94aca835c46e9734664170a87af370c05",
+    "legal_evidence": {
+      "documents": [
+        {
+          "byte_size": 51,
+          "path": "ign-product.txt",
+          "role": "ign-product",
+          "sha256": "ed01fb3dfaea3839d1b4465ff93d2906e2109737cd07fbd0c2777bd0cdbd1d0f",
+          "url": "https://www.data.gouv.fr/api/1/datasets/rge-alti-r/"
+        },
+        {
+          "byte_size": 52,
+          "path": "open-licence.txt",
+          "role": "open-licence",
+          "sha256": "0bf0dd259b4e4a3c03786cb4064ed2db3cc45354913181d1f318bfa939117ec8",
+          "url": "https://www.etalab.gouv.fr/wp-content/uploads/2017/04/ETALAB-Licence-Ouverte-v2.0.pdf"
+        },
+        {
+          "byte_size": 44,
+          "path": "odbl.txt",
+          "role": "odbl",
+          "sha256": "89bd55c2963a6fcbc954c6860ed8ff77fc0ef9df4ff454ac29359c2842a94c5c",
+          "url": "https://opendatacommons.org/licenses/odbl/odbl-10.txt"
+        },
+        {
+          "byte_size": 55,
+          "path": "osm-attribution.txt",
+          "role": "osm-attribution",
+          "sha256": "628bb64ed98cd3a76bd7527f0e5bb7f3ebf4b910de5d053e3a327a39b1eaecd6",
+          "url": "https://osmfoundation.org/wiki/Licence/Attribution_Guidelines"
+        },
+        {
+          "byte_size": 54,
+          "path": "osm-collective.txt",
+          "role": "osm-collective",
+          "sha256": "2bcefd67812151269ef0c92d702ade7cae9e2ed9bbd6eb1bc382add3a264ff26",
+          "url": "https://osmfoundation.org/wiki/Licence/Community_Guidelines/Collective_Database_Guideline_Guideline"
+        }
+      ],
+      "retrieved_at": "2026-10-20T00:00:00Z",
+      "schema_version": 1,
+      "status": "evidence-for-human-review-not-authorization"
+    },
+    "notices": {
+      "database_offer": "entire-derived-databases-in-regional-components",
+      "database_terms": "ODbL-1.0; IGN contents under Licence Ouverte 2.0",
+      "heights": "NGF-IGN69 normal heights (EPSG:5720); no vertical conversion",
+      "ign": "IGN \u2014 RGE ALTI\u00ae 5 m; Licence Ouverte / Open Licence 2.0",
+      "modifications": "5 m point grids to 1 arc-second HGT; bilinear; integer quantization; DEM-enriched Valhalla graph",
+      "no_endorsement": "No IGN or OpenStreetMap endorsement; no warranty",
+      "osm": "\u00a9 OpenStreetMap contributors; ODbL 1.0",
+      "source_editions": [
+        "RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D002_2020-09-04.7z",
+        "RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D027_2022-12-21.7z",
+        "RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D028_2019-12-16.7z",
+        "RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D041_2019-12-16.7z",
+        "RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D045_2023-01-03.7z",
+        "RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D060_2020-09-04.7z",
+        "RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D075_2020-07-30.7z",
+        "RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D076_2020-10-20.7z",
+        "RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D077_2021-03-03.7z",
+        "RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D078_2020-07-30.7z",
+        "RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D080_2019-07-09.7z",
+        "RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D089_2023-01-03.7z",
+        "RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D091_2021-03-03.7z",
+        "RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D092_2020-07-30.7z",
+        "RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D093_2020-07-30.7z",
+        "RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D094_2020-07-30.7z",
+        "RGEALTI_2-0_5M_ASC_LAMB93-IGN69_D095_2020-07-30.7z"
+      ]
+    },
+    "output_vertical_crs": "EPSG:5720",
+    "private_manifest": {
+      "bounds": [
+        1.445097,
+        48.38,
+        2.25,
+        49.1
+      ],
+      "build_id": "27e188ffd2b54dd1f8366499168dd713eeb6acfc10ca6ca9801bf7a19869e272",
+      "components": {
+        "elevation": {
+          "component_id": "yvelines-ouest-parisien-elevation-v2",
+          "files": [
+            {
+              "byte_size": 9208,
+              "format": "elevation-manifest-v1",
+              "path": "elevation/manifest.json",
+              "sha256": "b6d9384bd4aa09205411f4ca81a67ca86e4d8a8fd4a78440898b1993665bf7a6"
+            },
+            {
+              "byte_size": 25239,
+              "format": "skadi-hgt-gzip-v1",
+              "path": "elevation/skadi/N48/N48E001.hgt.gz",
+              "sha256": "ef878716b82ba575fc448ca49fae2f720981192a09f3cb94ba95a759e62e0767"
+            },
+            {
+              "byte_size": 25239,
+              "format": "skadi-hgt-gzip-v1",
+              "path": "elevation/skadi/N48/N48E002.hgt.gz",
+              "sha256": "ef878716b82ba575fc448ca49fae2f720981192a09f3cb94ba95a759e62e0767"
+            },
+            {
+              "byte_size": 25239,
+              "format": "skadi-hgt-gzip-v1",
+              "path": "elevation/skadi/N49/N49E001.hgt.gz",
+              "sha256": "ef878716b82ba575fc448ca49fae2f720981192a09f3cb94ba95a759e62e0767"
+            },
+            {
+              "byte_size": 25239,
+              "format": "skadi-hgt-gzip-v1",
+              "path": "elevation/skadi/N49/N49E002.hgt.gz",
+              "sha256": "ef878716b82ba575fc448ca49fae2f720981192a09f3cb94ba95a759e62e0767"
+            }
+          ]
+        },
+        "map": {
+          "component_id": "yvelines-ouest-parisien-map-v1",
+          "files": [
+            {
+              "byte_size": 514,
+              "format": "map-manifest-v1",
+              "path": "map/manifest.json",
+              "sha256": "ab2f8c9a8a1ab75192d7f5b9171b08cdf01af416e8d098d983682106ad73fe93"
+            },
+            {
+              "byte_size": 131,
+              "format": "pmtiles-v3-mvt",
+              "path": "map/basemap.pmtiles",
+              "sha256": "101125030fa3451b07467b3687b3c27a9a301b838ff845a27612557e297e5ebf"
+            }
+          ]
+        },
+        "nature": {
+          "component_id": "yvelines-ouest-parisien-nature-v1",
+          "files": [
+            {
+              "byte_size": 366,
+              "format": "nature-index-v1-gzip-json",
+              "path": "nature/index.json.gz",
+              "sha256": "3d50d136ad27c3b83fab99a0a1ccf99eee83960cfc83f18537cc5c3992c1f988"
+            }
+          ]
+        },
+        "pois": {
+          "component_id": "yvelines-ouest-parisien-pois-v1",
+          "files": [
+            {
+              "byte_size": 972,
+              "format": "poi-index-v2-gzip-json",
+              "path": "pois/index.json.gz",
+              "sha256": "1ec71d672362af5c43c81ed030f578c3fffeb635644b5c80a87a135d4dd92565"
+            }
+          ]
+        },
+        "routing": {
+          "component_id": "yvelines-ouest-parisien-routing-v2",
+          "files": [
+            {
+              "byte_size": 213,
+              "format": "routing-manifest-v2",
+              "path": "routing/manifest.json",
+              "sha256": "9750e9441db1624c052ec84404715fae46c1246b352966f0f4a383753e1ce21b"
+            },
+            {
+              "byte_size": 10240,
+              "format": "valhalla-3.9.1-elevation-tar",
+              "path": "routing/valhalla_tiles.tar",
+              "sha256": "e5e0167afef8e595f21579f98ffdd088b1a92ccf36d7df29fef91864643e432b"
+            }
+          ]
+        }
+      },
+      "display_name": "SYNTHETIC fixture only",
+      "publication_allowed": false,
+      "region_id": "yvelines-ouest-parisien",
+      "schema_version": 2,
+      "source": {
+        "basename": "tiny.osm.pbf",
+        "byte_size": 598,
+        "coverage_evidence": "osm-header-bounds",
+        "header_bounds": [
+          1.0,
+          48.0,
+          4.0,
+          50.0
+        ],
+        "sha256": "94aba87d7c0b8021a08aa4b80b88c3a26831f235abf84985d8a475609a5d5bfe",
+        "source_url": null
+      },
+      "tools": {
+        "map_build_image": "maven:3.9.13-eclipse-temurin-21-alpine@sha256:194053d8f204a39710e564b49ba4d22188159fd29f073b8da1715aac61503132",
+        "nature_index_schema": 1,
+        "osmium_version": "4.3.1",
+        "pipeline_version": 2,
+        "poi_classifier": "3",
+        "poi_index_schema": 2,
+        "protomaps_archive_sha256": "7b8e71f18627754af756923f6613a9008b5f1ff82377fff4e617157d053fc807",
+        "protomaps_revision": "3ea8293a28131c3dc63f1bb20827bdb8a76df06f",
+        "python_version": "3.13.5",
+        "shapely_version": "2.1.2",
+        "valhalla_image": "ghcr.io/valhalla/valhalla:3.9.1@sha256:18cb42988e03c70dc4bc4ca095a259ec4db5e5df928be65956fc1c64c280b47a"
+      }
+    },
+    "schema_version": 2,
+    "upstream_product": "IGN-RGE-ALTI-5M"
+  }
+}

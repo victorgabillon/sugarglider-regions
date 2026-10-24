@@ -1,56 +1,107 @@
-# Static regional distribution repository template
+# Sugarglider V2 regional publication
 
-This is an inactive template, not a deployment or authorization to publish.
-After approval, copy `publish.yml` to `.github/workflows/publish.yml` in a separate
-public data-distribution repository. Copy the standalone
-`src/sugarglider/offline_regions/unpack_distribution.py` to its root alongside
-this README. Also copy `src/sugarglider/offline_regions/copy_public_privacy.py` to
-the root and this directory's `privacy/index.html` to `privacy/index.html`.
-Work must fill the privacy template's public publisher/contact, effective date,
-hosts and operator settings, review the policy against the actual deployment,
-and change `data-policy-status="draft"` to `"approved"`. The workflow rejects
-unfilled placeholders or an unapproved page. It copies the reviewed HTML bytes
-after verified extraction; it never changes the regional ZIP or its files.
-Commit those source files only. Generated regional data belongs in
-an explicit Release asset and the resulting Pages artifact, never Git history.
+Prepare one approved five-component V2 regional snapshot for the existing `/v2/`
+installation contract. This repository produces a review artifact and checks HTTPS
+file delivery. It contains no deployment command or Pages publishing workflow.
+The current live site, existing public artifacts and public `/privacy/` policy
+remain unchanged until an explicitly authorized cutover.
 
-Enable GitHub Pages with the GitHub Actions publishing source. Create an explicit
-release containing `sugarglider-regions-static.zip`, prepared and reviewed with
-the main application's PR42 distribution tool. Dispatch Publish approved offline
-region files with that release tag and the exact reviewed archive SHA-256.
-No push, release creation or schedule starts the workflow automatically.
+Read [ARCHITECTURE.md](ARCHITECTURE.md) for the reviewed V2-only design. There is no
+V1 reader, combined catalog, retained-build assembler or migration framework.
 
-The Release asset is the complete prepared ZIP. **Pages serves the complete
-extracted regional directory, including the large map and routing archives**,
-alongside catalog, attribution and `/privacy/`. Individual Release-asset URLs are
-not substituted into the app: they do not provide the unchanged relative layout
-and can redirect. A host that cannot serve these exact paths and bytes does not
-satisfy the prepared client contract. Work must report that incompatibility.
+## Verify and prepare
 
-The workflow verifies the expected whole-archive hash, permits only regular,
-strictly named static files, rejects traversal/symlinks/duplicates/compression,
-and caps the site below GitHub Pages' published size limit. Deployment depends on
-successful preparation. Only deployment receives Pages write and OIDC authority;
-release downloading receives read-only repository authority. No routing server,
-API, credentials, participant data or runtime application is hosted here.
+Use Python 3.13 and `uv sync --locked`. The lock pins the application verifier at
+`d894ef7f36be346bc49cd7ac3f6bc0c8da0f85bc`, including its code-owned complete notice
+registry. This is the reviewed, merged application revision; the source pin
+still grants no publication or operator approval. `osmium` is also required because the shared
+verifier imports the application's bounds validator; this publisher never parses
+PBF data.
 
-Before enabling the app's download URL, verify the deployed HTTPS directory,
-CORS, no redirects, untransformed compressed files, every size/hash and a real
-Fairphone download. A green workflow is not proof of this client acceptance.
+Supply independently reviewed digests, not digests calculated automatically from
+untrusted downloaded inputs. All paths below are explicit local files. Output must
+be fresh, with an existing parent directory.
 
-Pages deployment replaces the complete site. Prepare an update with
-repeatable `--retain-directory` arguments for every supported previous version.
-Never overwrite immutable files or silently retire a supported version. The
-reviewed verifier accepts one advertised current region and multiple complete,
-independently verified retained builds, within the unchanged file-count and
-950 MB site limits. Additional regions or traffic beyond Pages limits require a
-separate hosting decision.
+```sh
+uv run --offline python -m sugarglider_publisher prepare \
+  --archive /review/sugarglider-regions-static.zip \
+  --archive-sha256 "$REVIEWED_ARCHIVE_SHA256" \
+  --evidence /review/ign-publication-evidence.json \
+  --approval /review/operator-approval.json \
+  --trusted-approval-sha256 "$TRUSTED_APPROVAL_SHA256" \
+  --policy /review/privacy-v2.html \
+  --policy-sha256 "$REVIEWED_POLICY_SHA256" \
+  --base-url https://publisher.example/sugarglider-regions/v2/ \
+  --output /review/prepared-v2
+```
 
-See the main repository's `docs/pr42-static-distribution.md` for preparation,
-current limits, licensing, approval gates and the publication checklist.
+Only current evidence schema 3 with complete basis 2 is accepted. Verification
+requires the exact operator authorization, all five components, bound full source
+notices and every file's approved size/hash. No real authorization is supplied or
+generated by this repository. Synthetic test decisions are confined to temporary
+test fixtures and cannot approve real data.
 
-The integration candidate's `docs/work-publication-handoff.md` contains the exact
-verified artifact inventory, URLs, source revisions and Work return contract.
-`yvelines-publication.json` is publication verification metadata, not generated
-map/index content. Public deployment and Play operations belong to Work; the
-integration branch and original draft PRs remain unmerged to main by Codex.
+The V2 policy is a separate publisher-reviewed input with an independent digest.
+Its root `<html>` must carry `data-policy-status="approved"` and
+`data-policy-contract="sugarglider-v2"`, and it must contain static, completed HTML.
+Markers alone cannot establish publisher approval or legal sufficiency. The
+existing [privacy/index.html](privacy/index.html) remains historical live-site
+source and is never implicitly reused for V2. The prepared policy preserves the
+public `/privacy/` URL shape; actual deployment needs its own approved policy.
+
+Successful output contains:
+
+- `site/`: root landing page, exact policy at `privacy/index.html`, and the complete
+  verified regional directory under `v2/`.
+- `inventory.json`: deterministic paths, sizes and SHA-256 values for every served
+  file, including notices and installation components.
+- `receipt.json`: input, approval, policy and inventory digests, build ID, base URL
+  and `prepared-not-published` status. Keep this outside the served directory.
+
+Failures remove only the operation's own staging/output. Existing outputs and
+source archives are never overwritten. The manual **Prepare approved V2
+publication for review** workflow downloads the four named input assets from an
+explicit release tag and runs this command. Its artifact is for review only; it
+has read-only repository permissions and no Pages/OIDC deployment authority.
+Do not dispatch it with real regional data as part of this implementation task.
+
+## Check delivery and select a rollback
+
+After a separately authorized deployment, check the exact prepared inventory
+against its independently retained digest and intended canonical HTTPS base URL:
+
+```sh
+uv run --offline python -m sugarglider_publisher check-delivery \
+  --publication /review/prepared-v2 \
+  --trusted-inventory-sha256 "$REVIEWED_INVENTORY_SHA256" \
+  --base-url https://publisher.example/sugarglider-regions/v2/
+```
+
+The read-only check rejects redirects, untrusted TLS, transformed bytes, missing
+Android-origin CORS and incorrect file sizes/hashes. It verifies every installation
+file and the complete notices, then checks a PMTiles `bytes=0-126` request returns
+206 with the exact content range and bytes. Requests have bounded reads and
+timeouts, with no automatic retries. Delivery success is transport evidence,
+not publication authorization or proof of installation on a physical device.
+
+For a simple compatible V2 rollback, select the prior five-component archive with
+its own evidence, independently trusted approval and approved policy. Prepare it
+in another fresh directory using the same command and review its inventory before
+any separately authorized switch. Never rewrite immutable build paths. Historical
+archives may be kept separately; this publisher has no retention manager or data
+merging behavior. Neither preparing a rollback nor merging this code switches the
+live host. No cutover is included here.
+
+## Development checks
+
+```sh
+uv sync --locked
+uv run --offline make check
+uv run --offline python -m tests.https_acceptance
+```
+
+Unit tests require no network, Docker, real map data or services. The separate HTTPS
+acceptance command uses only loopback, tiny synthetic components, zero-filled
+terrain, temporary test-only authorization records and an ephemeral certificate.
+It exercises the production TLS/redirect transport without adding an insecure
+production option. CI runs both checks and cannot publish the site.
