@@ -1,0 +1,32 @@
+[project]
+name = "sugarglider-v2-publisher"
+version = "0.1.0"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+  "osmium>=4.3,<5",
+  "sugarglider @ git+https://github.com/victorgabillon/sugarglider.git@5257bdc839c0a1a5a648909fd16cdf2641263af8",
+]
+
+[dependency-groups]
+dev = ["pytest==9.1.1", "ruff==0.15.21", "mypy==2.3.0"]
+
+[tool.ruff]
+target-version = "py313"
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.mypy]
+python_version = "3.13"
+strict = true
+files = ["sugarglider_publisher", "tests"]
+
+[[tool.mypy.overrides]]
+module = ["sugarglider.*"]
+follow_untyped_imports = true
+follow_imports = "silent"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
