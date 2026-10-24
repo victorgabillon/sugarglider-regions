@@ -12,9 +12,9 @@ V1 reader, combined catalog, retained-build assembler or migration framework.
 ## Verify and prepare
 
 Use Python 3.13 and `uv sync --locked`. The lock pins the application verifier at
-`5257bdc839c0a1a5a648909fd16cdf2641263af8`, including its code-owned complete notice
-registry. Its application review and merges are separate dependencies; this source
-pin grants no publication authority. `osmium` is also required because the shared
+`d894ef7f36be346bc49cd7ac3f6bc0c8da0f85bc`, including its code-owned complete notice
+registry. This is the reviewed, merged application revision; the source pin
+still grants no publication or operator approval. `osmium` is also required because the shared
 verifier imports the application's bounds validator; this publisher never parses
 PBF data.
 

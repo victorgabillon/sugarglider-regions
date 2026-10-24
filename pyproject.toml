@@ -4,7 +4,7 @@ version = "0.1.0"
 requires-python = ">=3.13,<3.14"
 dependencies = [
   "osmium>=4.3,<5",
-  "sugarglider @ git+https://github.com/victorgabillon/sugarglider.git@5257bdc839c0a1a5a648909fd16cdf2641263af8",
+  "sugarglider @ git+https://github.com/victorgabillon/sugarglider.git@d894ef7f36be346bc49cd7ac3f6bc0c8da0f85bc",
 ]
 
 [dependency-groups]

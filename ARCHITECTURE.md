@@ -11,8 +11,8 @@ authorization and notice rendering. Pin its reviewed source commit, rather than
 copying its schemas and legal strings into another repository. The host rejects
 older evidence before calling its public verification path. It exposes no private
 or compatibility mode. This dependency currently points to the reviewed notices
-commit `5257bdc839c0a1a5a648909fd16cdf2641263af8`; application review/merges remain
-separate from this draft and no merge or publication is implied by the pin.
+commit `d894ef7f36be346bc49cd7ac3f6bc0c8da0f85bc` on application `main` after merging PRs #101–#104.
+This dependency pin grants no publication authority or hosting deployment.
 
 ## Preparation
 

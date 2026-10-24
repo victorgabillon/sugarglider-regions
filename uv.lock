@@ -557,7 +557,7 @@ wheels = [
 [[package]]
 name = "sugarglider"
 version = "0.1.0"
-source = { git = "https://github.com/victorgabillon/sugarglider.git?rev=5257bdc839c0a1a5a648909fd16cdf2641263af8#5257bdc839c0a1a5a648909fd16cdf2641263af8" }
+source = { git = "https://github.com/victorgabillon/sugarglider.git?rev=d894ef7f36be346bc49cd7ac3f6bc0c8da0f85bc#d894ef7f36be346bc49cd7ac3f6bc0c8da0f85bc" }
 dependencies = [
     { name = "fastapi" },
     { name = "httpx" },
@@ -585,7 +585,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "osmium", specifier = ">=4.3,<5" },
-    { name = "sugarglider", git = "https://github.com/victorgabillon/sugarglider.git?rev=5257bdc839c0a1a5a648909fd16cdf2641263af8" },
+    { name = "sugarglider", git = "https://github.com/victorgabillon/sugarglider.git?rev=d894ef7f36be346bc49cd7ac3f6bc0c8da0f85bc" },
 ]
 
 [package.metadata.requires-dev]
